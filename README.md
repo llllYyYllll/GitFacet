@@ -1,4 +1,4 @@
-# GitFlow
+# GitFacet
 
 ![Windows](https://img.shields.io/badge/Windows-10%20%2F%2011-0078D4?logo=windows&logoColor=white)
 ![Version](https://img.shields.io/badge/version-1.1.0-E85D2A)
@@ -6,9 +6,9 @@
 
 Windows 上的 Git / GitHub 可视化客户端。闭源软件，安装包在本仓库提供。
 
-GitFlow 把「工作区 → 暂存区 → 本地仓库 → 远程仓库」画成一张可以点的图。点方块看里面的文件和提交，点箭头执行 add、commit、push、pull，操作完成后状态会顺着箭头动一下。刚开始用 Git 的时候，这比对着终端猜自己走到哪一步要直观。
+GitFacet 把「工作区 → 暂存区 → 本地仓库 → 远程仓库」画成一张可以点的图。点方块看里面的文件和提交，点箭头执行 add、commit、push、pull，操作完成后状态会顺着箭头动一下。刚开始用 Git 的时候，这比对着终端猜自己走到哪一步要直观。
 
-![GitFlow 主界面](assets/screenshot.png)
+![GitFacet 主界面](assets/screenshot.png)
 
 ## 功能
 
@@ -22,7 +22,7 @@ GitFlow 把「工作区 → 暂存区 → 本地仓库 → 远程仓库」画成
 - Issues / PR 列表、详情、评论；创建 PR、合并 PR、检出 PR 分支
 - 浅色 / 深色主题，动画可以关掉
 
-GitFlow 不替代编辑器。看改动、做 Git 操作是它的活，改代码还是回 IDE。
+GitFacet 不替代编辑器。看改动、做 Git 操作是它的活，改代码还是回 IDE。
 
 ## 下载
 
@@ -30,8 +30,8 @@ GitFlow 不替代编辑器。看改动、做 Git 操作是它的活，改代码�
 
 | 文件 | 说明 |
 | --- | --- |
-| [GitFlow_1.1.0_x64-setup.exe](download/GitFlow_1.1.0_x64-setup.exe) | 安装版，推荐 |
-| [gitflow.exe](download/gitflow.exe) | 便携版，免安装 |
+| [GitFacet_1.1.0_x64-setup.exe](download/GitFacet_1.1.0_x64-setup.exe) | 安装版，推荐 |
+| [gitfacet.exe](download/gitfacet.exe) | 便携版，免安装 |
 
 安装包和程序没有代码签名，第一次运行可能会被 Windows SmartScreen 拦一下。点「更多信息」，再点「仍要运行」就行。
 
@@ -42,11 +42,11 @@ SHA-256 校验值在 [download/SHA256SUMS.txt](download/SHA256SUMS.txt)。
 - 安装 [Git for Windows](https://git-scm.com/download/win)，安装时勾选把 Git 加入 PATH
 - 要用 Issues / PR 的话，安装 [GitHub CLI](https://cli.github.com/) 并执行 `gh auth login`，或者设置环境变量 `GH_TOKEN`
 
-推送和拉取使用的是系统里 Git 已有的凭据（SSH key 或 Windows 凭据管理器）。GitFlow 不收集也不保存 GitHub 密码和 token，应用里没有登录框。
+推送和拉取使用的是系统里 Git 已有的凭据（SSH key 或 Windows 凭据管理器）。GitFacet 不收集也不保存 GitHub 密码和 token，应用里没有登录框。
 
 ## 上手
 
-1. 打开 GitFlow，选择「打开本地仓库」，或者粘贴 GitHub 地址克隆一个仓库
+1. 打开 GitFacet，选择「打开本地仓库」，或者粘贴 GitHub 地址克隆一个仓库
 2. 改完代码，点「工作区」，左侧会列出未暂存的文件，点文件查看 diff
 3. 点工作区旁边的「添加到暂存 add」
 4. 点「提交 commit」，填写提交说明
@@ -56,7 +56,7 @@ SHA-256 校验值在 [download/SHA256SUMS.txt](download/SHA256SUMS.txt)。
 
 ## 数据放在哪
 
-仓库列表和界面偏好保存在 `%APPDATA%\GitFlow\`。删除这个目录等于重置界面状态，不会动你的代码仓库。
+仓库列表和界面偏好保存在 `%APPDATA%\GitFacet\`。删除这个目录等于重置界面状态，不会动你的代码仓库。
 
 卸载：安装版在「设置 → 应用」里卸载，便携版直接删掉 exe。
 
@@ -64,7 +64,7 @@ SHA-256 校验值在 [download/SHA256SUMS.txt](download/SHA256SUMS.txt)。
 
 **提示找不到 git？**
 
-GitFlow 调用系统里的 git 命令。确认 Git for Windows 已安装，并且 `git --version` 在终端里能正常输出。装完之后可能需要重新打开 GitFlow。
+GitFacet 调用系统里的 git 命令。确认 Git for Windows 已安装，并且 `git --version` 在终端里能正常输出。装完之后可能需要重新打开 GitFacet。
 
 **push 或 pull 失败，提示认证错误？**
 
@@ -86,7 +86,7 @@ GitFlow 调用系统里的 git 命令。确认 Git for Windows 已安装，并�
 
 Bug 和建议请提到 [Issues](../../issues)。提交时带上这些信息会方便定位：
 
-- GitFlow 版本
+- GitFacet 版本
 - Windows 版本
 - 复现步骤和期望结果
 - 能复制的报错原文，或者截图
@@ -103,4 +103,4 @@ Bug 和建议请提到 [Issues](../../issues)。提交时带上这些信息会�
 
 ---
 
-Copyright © 2026 GitFlow
+Copyright © 2026 GitFacet
